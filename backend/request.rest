@@ -1,0 +1,12 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "outra coisa",
+    "description": "alguma coisa",
+    "price": 1400,
+    "image": "https://cdn.sstatic.net/Img/home/illo-public.svg?v=14bd5a506009"
+}
+
+###
+GET http://localhost:3000/api/services
