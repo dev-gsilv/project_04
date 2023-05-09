@@ -53,3 +53,38 @@ Content-Type: application/json
         }
     ]
 }
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/6459c7f5b01f1cd856533123
+
+###
+DELETE http://localhost:3000/api/parties/6459cde825ab1ab0bf445db3
+
+###
+PUT http://localhost:3000/api/parties/6459cfc8cf268309e90243e9
+Content-Type: application/json
+
+{
+    "title": "festa teste 4 PUT test",
+    "author": "Guilherme",
+    "description": "Testando o U do crud",
+    "budget": 10000,
+    "image": "https://cdn.sstatic.net/Img/home/illo-public.svg?v=14bd5a506009",
+    "services": [
+        {
+            "name": "comida",
+            "description": "alguma coisa",
+            "price": 2000,
+            "image": "https://cdn.sstatic.net/Img/home/illo-public.svg?v=14bd5a506009"
+        },
+        {
+            "name": "bebidas",
+            "description": "alguma coisa",
+            "price": 2000,
+            "image": "https://cdn.sstatic.net/Img/home/illo-public.svg?v=14bd5a506009"
+        }
+    ]
+}
