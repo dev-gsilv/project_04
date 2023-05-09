@@ -1,2 +1,2 @@
 # project_04
-An party management API, using Node.js, Express, MongoDB e Mongoose.
+A party management REST API, using Node.js, Express, MongoDB e Mongoose.

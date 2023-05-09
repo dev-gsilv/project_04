@@ -1,7 +1,7 @@
 const PartyModel = require("../models/Party");
 
 const checkPartyBudget = (budget, services) => {
-    const priceSum = services.reduce((sum, services) => sum + service.price, 0)
+    const priceSum = services.reduce((sum, services) => sum + services.price, 0)
 
     if (priceSum > budget){
         return false
