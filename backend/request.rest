@@ -10,3 +10,32 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/6457067729e00cde10024c4b
+
+###
+DELETE http://localhost:3000/api/services/6457067729e00cde10024c4b
+
+###
+PUT http://localhost:3000/api/services/645709e8607e57d2265daf6e
+Content-Type: application/json
+
+{
+    "name": "put test",
+    "description": "alguma coisa",
+    "price": 9900,
+    "image": "https://cdn.sstatic.net/Img/home/illo-public.svg?v=14bd5a506009"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "festa teste",
+    "author": "Guilherme",
+    "description": "Lorem ipsun...",
+    "budget": 5000,
+    "image": "https://cdn.sstatic.net/Img/home/illo-public.svg?v=14bd5a506009"
+}

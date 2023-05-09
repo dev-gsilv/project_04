@@ -26,8 +26,8 @@ const partySchema = new Schema({
         required: true
     },
     services: {
-        type: [serviceSchema]
-    },
+        type: [serviceSchema.schema]
+    }
 }, 
 {timestamps: true}
 );

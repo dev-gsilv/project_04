@@ -1,10 +1,11 @@
 const router = require("express").Router();
 
-const serviceController = require("../controllers/serviceControler");
+// Services router
 const servicesRouter = require("./services");
-
 router.use("/", servicesRouter);
-router.route("/services").get((req, res) => serviceController.getAll(req, res));
 
+// Parties router
+const partyRouter = require("./parties");
+router.use("/", partyRouter)
 
 module.exports = router;
